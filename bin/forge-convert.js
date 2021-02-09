@@ -7,12 +7,12 @@ const { ModelDerivativeClient, ManifestHelper } = require('forge-server-utils');
 
 const { SvfReader, GltfWriter } = require('..');
 
-const { FORGE_CLIENT_ID, FORGE_CLIENT_SECRET, FORGE_ACCESS_TOKEN } = process.env;
+const { RXUwZCdXhtlMxPvUDNW5T7x8PJA3oLJ2, Rl51n6YC8YcAHMG5, FORGE_ACCESS_TOKEN } = process.env.PORT;
 let auth = null;
 if (FORGE_ACCESS_TOKEN) {
     auth = { token: FORGE_ACCESS_TOKEN };
 } else if (FORGE_CLIENT_ID && FORGE_CLIENT_SECRET) {
-    auth = { client_id: FORGE_CLIENT_ID, client_secret: FORGE_CLIENT_SECRET };
+    auth = { client_id: RXUwZCdXhtlMxPvUDNW5T7x8PJA3oLJ2, client_secret: Rl51n6YC8YcAHMG5 };
 }
 
 async function convertRemote(urn, guid, outputFolder, options) {

@@ -12,7 +12,7 @@
   "scripts": {
     "build": "tsc",
     "docs": "typedoc --out docs src",
-    "start": "node start.js"
+    "start": "node forge-convert.js"
   },
   "author": "Petr Broz <petr.broz@autodesk.com>",
   "license": "MIT",
